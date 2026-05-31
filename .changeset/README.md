@@ -1,29 +1,17 @@
-# react-hooks-toolbox
+# react-hook-hub
 
-This monorepo uses [Changesets](https://github.com/changesets/changesets) for versioning and publishing.
+This repo publishes a **single npm package**: `react-hook-hub`.
+
+Individual hooks are available via subpath imports (e.g. `react-hook-hub/use-debounce`), not as separate npm packages.
 
 ## Adding a changeset
-
-When you make a user-facing change, run:
 
 ```bash
 npm run changeset
 ```
 
-Follow the prompts to select packages and bump type (patch/minor/major).
-
-## Release flow
-
-1. Merge PRs with changeset files into `main`
-2. The Release GitHub Action opens a "Version Packages" PR
-3. Merge that PR to bump versions and update changelogs
-4. The action publishes all packages to npm automatically
-
-## Manual release (local)
+## Release
 
 ```bash
-npm run version-packages   # apply changesets locally
-npm run release            # build + publish to npm
+npm run publish:all -- --otp=YOUR_CODE
 ```
-
-Requires `NPM_TOKEN` with publish access to `@react-hooks-toolbox` and `react-hooks-toolbox`.

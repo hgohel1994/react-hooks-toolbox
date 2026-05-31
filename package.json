@@ -1,21 +1,23 @@
 {
-  "name": "react-hooks-toolbox",
+  "name": "react-hook-hub",
   "private": true,
   "version": "1.0.0",
   "description": "A collection of useful React custom hooks — install all or pick individual hooks",
   "license": "MIT",
   "workspaces": [
-    "packages/*"
+    "packages/react-hook-hub"
   ],
   "scripts": {
     "build": "node scripts/build.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
-    "clean": "npm run clean --workspaces --if-present",
+    "clean": "npm run clean -w react-hook-hub",
     "changeset": "changeset",
     "version-packages": "changeset version && npm install",
-    "release": "npm run build && changeset publish"
+    "release": "npm run build && changeset publish",
+    "publish:all": "node scripts/publish-all.mjs",
+    "publish:all:dry-run": "node scripts/publish-all.mjs --dry-run"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.5",

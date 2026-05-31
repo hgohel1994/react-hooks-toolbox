@@ -1,0 +1,267 @@
+{
+  "name": "react-hook-hub",
+  "version": "1.0.0",
+  "description": "A collection of useful React custom hooks — install all or pick individual hooks via subpath imports",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./use-async": {
+      "import": {
+        "types": "./dist/use-async.d.ts",
+        "default": "./dist/use-async.js"
+      },
+      "require": {
+        "types": "./dist/use-async.d.cts",
+        "default": "./dist/use-async.cjs"
+      }
+    },
+    "./use-click-outside": {
+      "import": {
+        "types": "./dist/use-click-outside.d.ts",
+        "default": "./dist/use-click-outside.js"
+      },
+      "require": {
+        "types": "./dist/use-click-outside.d.cts",
+        "default": "./dist/use-click-outside.cjs"
+      }
+    },
+    "./use-copy-to-clipboard": {
+      "import": {
+        "types": "./dist/use-copy-to-clipboard.d.ts",
+        "default": "./dist/use-copy-to-clipboard.js"
+      },
+      "require": {
+        "types": "./dist/use-copy-to-clipboard.d.cts",
+        "default": "./dist/use-copy-to-clipboard.cjs"
+      }
+    },
+    "./use-counter": {
+      "import": {
+        "types": "./dist/use-counter.d.ts",
+        "default": "./dist/use-counter.js"
+      },
+      "require": {
+        "types": "./dist/use-counter.d.cts",
+        "default": "./dist/use-counter.cjs"
+      }
+    },
+    "./use-debounce": {
+      "import": {
+        "types": "./dist/use-debounce.d.ts",
+        "default": "./dist/use-debounce.js"
+      },
+      "require": {
+        "types": "./dist/use-debounce.d.cts",
+        "default": "./dist/use-debounce.cjs"
+      }
+    },
+    "./use-document-title": {
+      "import": {
+        "types": "./dist/use-document-title.d.ts",
+        "default": "./dist/use-document-title.js"
+      },
+      "require": {
+        "types": "./dist/use-document-title.d.cts",
+        "default": "./dist/use-document-title.cjs"
+      }
+    },
+    "./use-event-listener": {
+      "import": {
+        "types": "./dist/use-event-listener.d.ts",
+        "default": "./dist/use-event-listener.js"
+      },
+      "require": {
+        "types": "./dist/use-event-listener.d.cts",
+        "default": "./dist/use-event-listener.cjs"
+      }
+    },
+    "./use-fetch": {
+      "import": {
+        "types": "./dist/use-fetch.d.ts",
+        "default": "./dist/use-fetch.js"
+      },
+      "require": {
+        "types": "./dist/use-fetch.d.cts",
+        "default": "./dist/use-fetch.cjs"
+      }
+    },
+    "./use-hover": {
+      "import": {
+        "types": "./dist/use-hover.d.ts",
+        "default": "./dist/use-hover.js"
+      },
+      "require": {
+        "types": "./dist/use-hover.d.cts",
+        "default": "./dist/use-hover.cjs"
+      }
+    },
+    "./use-intersection-observer": {
+      "import": {
+        "types": "./dist/use-intersection-observer.d.ts",
+        "default": "./dist/use-intersection-observer.js"
+      },
+      "require": {
+        "types": "./dist/use-intersection-observer.d.cts",
+        "default": "./dist/use-intersection-observer.cjs"
+      }
+    },
+    "./use-interval": {
+      "import": {
+        "types": "./dist/use-interval.d.ts",
+        "default": "./dist/use-interval.js"
+      },
+      "require": {
+        "types": "./dist/use-interval.d.cts",
+        "default": "./dist/use-interval.cjs"
+      }
+    },
+    "./use-is-mounted": {
+      "import": {
+        "types": "./dist/use-is-mounted.d.ts",
+        "default": "./dist/use-is-mounted.js"
+      },
+      "require": {
+        "types": "./dist/use-is-mounted.d.cts",
+        "default": "./dist/use-is-mounted.cjs"
+      }
+    },
+    "./use-key-press": {
+      "import": {
+        "types": "./dist/use-key-press.d.ts",
+        "default": "./dist/use-key-press.js"
+      },
+      "require": {
+        "types": "./dist/use-key-press.d.cts",
+        "default": "./dist/use-key-press.cjs"
+      }
+    },
+    "./use-local-storage": {
+      "import": {
+        "types": "./dist/use-local-storage.d.ts",
+        "default": "./dist/use-local-storage.js"
+      },
+      "require": {
+        "types": "./dist/use-local-storage.d.cts",
+        "default": "./dist/use-local-storage.cjs"
+      }
+    },
+    "./use-media-query": {
+      "import": {
+        "types": "./dist/use-media-query.d.ts",
+        "default": "./dist/use-media-query.js"
+      },
+      "require": {
+        "types": "./dist/use-media-query.d.cts",
+        "default": "./dist/use-media-query.cjs"
+      }
+    },
+    "./use-on-mount": {
+      "import": {
+        "types": "./dist/use-on-mount.d.ts",
+        "default": "./dist/use-on-mount.js"
+      },
+      "require": {
+        "types": "./dist/use-on-mount.d.cts",
+        "default": "./dist/use-on-mount.cjs"
+      }
+    },
+    "./use-online-status": {
+      "import": {
+        "types": "./dist/use-online-status.d.ts",
+        "default": "./dist/use-online-status.js"
+      },
+      "require": {
+        "types": "./dist/use-online-status.d.cts",
+        "default": "./dist/use-online-status.cjs"
+      }
+    },
+    "./use-previous": {
+      "import": {
+        "types": "./dist/use-previous.d.ts",
+        "default": "./dist/use-previous.js"
+      },
+      "require": {
+        "types": "./dist/use-previous.d.cts",
+        "default": "./dist/use-previous.cjs"
+      }
+    },
+    "./use-timeout": {
+      "import": {
+        "types": "./dist/use-timeout.d.ts",
+        "default": "./dist/use-timeout.js"
+      },
+      "require": {
+        "types": "./dist/use-timeout.d.cts",
+        "default": "./dist/use-timeout.cjs"
+      }
+    },
+    "./use-toggle": {
+      "import": {
+        "types": "./dist/use-toggle.d.ts",
+        "default": "./dist/use-toggle.js"
+      },
+      "require": {
+        "types": "./dist/use-toggle.d.cts",
+        "default": "./dist/use-toggle.cjs"
+      }
+    },
+    "./use-window-size": {
+      "import": {
+        "types": "./dist/use-window-size.d.ts",
+        "default": "./dist/use-window-size.js"
+      },
+      "require": {
+        "types": "./dist/use-window-size.d.cts",
+        "default": "./dist/use-window-size.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "custom-hooks",
+    "react-hooks",
+    "hook-hub",
+    "toolbox",
+    "debounce",
+    "localStorage",
+    "media-query"
+  ],
+  "author": "Hiren Gohel",
+  "homepage": "https://github.com/hgohel1994/react-hooks-toolbox#readme",
+  "bugs": {
+    "url": "https://github.com/hgohel1994/react-hooks-toolbox/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hgohel1994/react-hooks-toolbox.git"
+  }
+}
