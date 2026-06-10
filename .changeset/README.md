@@ -1,17 +1,5 @@
-# react-hook-hub
+# react-hook-toolbox
 
-This repo publishes a **single npm package**: `react-hook-hub`.
+This repo publishes a **single npm package**: `react-hook-toolbox`.
 
-Individual hooks are imported via subpaths (e.g. `react-hook-hub/use-debounce`), not separate npm packages.
-
-## Adding a changeset
-
-```bash
-npm run changeset
-```
-
-## Release
-
-```bash
-npm run publish:all -- --otp=YOUR_CODE
-```
+Individual hooks are imported via subpaths (e.g. `react-hook-toolbox/use-debounce`), not separate npm packages.

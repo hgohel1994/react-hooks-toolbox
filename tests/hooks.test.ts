@@ -1,12 +1,12 @@
 import { act, renderHook } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
-import { useDebounce } from "../packages/react-hook-hub/src/hooks/use-debounce";
-import { useToggle } from "../packages/react-hook-hub/src/hooks/use-toggle";
-import { usePrevious } from "../packages/react-hook-hub/src/hooks/use-previous";
-import { useCounter } from "../packages/react-hook-hub/src/hooks/use-counter";
-import { useIsMounted } from "../packages/react-hook-hub/src/hooks/use-is-mounted";
-import { useOnMount } from "../packages/react-hook-hub/src/hooks/use-on-mount";
-import { useFetch } from "../packages/react-hook-hub/src/hooks/use-fetch";
+import { useDebounce } from "../packages/react-hook-toolbox/src/hooks/use-debounce";
+import { useToggle } from "../packages/react-hook-toolbox/src/hooks/use-toggle";
+import { usePrevious } from "../packages/react-hook-toolbox/src/hooks/use-previous";
+import { useCounter } from "../packages/react-hook-toolbox/src/hooks/use-counter";
+import { useIsMounted } from "../packages/react-hook-toolbox/src/hooks/use-is-mounted";
+import { useOnMount } from "../packages/react-hook-toolbox/src/hooks/use-on-mount";
+import { useFetch } from "../packages/react-hook-toolbox/src/hooks/use-fetch";
 
 describe("useDebounce", () => {
   it("returns the initial value immediately", () => {

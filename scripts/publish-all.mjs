@@ -1,6 +1,6 @@
 import { execSync } from "node:child_process";
 
-const PACKAGE = "react-hook-hub";
+const PACKAGE = "react-hook-toolbox";
 const args = process.argv.slice(2);
 const dryRun = args.includes("--dry-run");
 const otpArg = args.find((arg) => arg.startsWith("--otp="));
@@ -45,7 +45,7 @@ try {
   console.error(`
 Publish failed.
 
-If you see "You do not have permission to publish react-hook-hub":
+If you see "You do not have permission to publish react-hook-toolbox":
   That name may already be taken on npm by another user.
 
 Other fixes:

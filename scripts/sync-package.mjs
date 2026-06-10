@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync, writeFileSync, copyFileSync } from "node:fs";
 import { join } from "node:path";
 
-const pkgRoot = "packages/react-hook-hub";
+const pkgRoot = "packages/react-hook-toolbox";
 const hooksDir = join(pkgRoot, "src/hooks");
 const hooks = readdirSync(hooksDir)
   .filter((name) => name.startsWith("use-"))
@@ -16,7 +16,7 @@ const pkg = JSON.parse(readFileSync(join(pkgRoot, "package.json"), "utf8"));
 delete pkg.dependencies;
 delete pkg.private;
 
-pkg.name = "react-hook-hub";
+pkg.name = "react-hook-toolbox";
 pkg.description =
   "A collection of useful React custom hooks — install once, import only the hooks you need via subpaths";
 pkg.sideEffects = false;
@@ -46,17 +46,17 @@ pkg.scripts.clean = "rm -rf dist";
 writeFileSync(join(pkgRoot, "package.json"), `${JSON.stringify(pkg, null, 2)}\n`);
 
 const hookRows = hooks
-  .map((hook) => `| \`${formatHookName(hook)}\` | \`react-hook-hub/${hook}\` |`)
+  .map((hook) => `| \`${formatHookName(hook)}\` | \`react-hook-toolbox/${hook}\` |`)
   .join("\n");
 
-const readme = `# react-hook-hub
+const readme = `# react-hook-toolbox
 
 A collection of useful, tree-shakeable React custom hooks in **one npm package**. Install once — import only the hooks you use.
 
 ## Installation
 
 \`\`\`bash
-npm install react-hook-hub
+npm install react-hook-toolbox
 \`\`\`
 
 You only need **one install**. Pick individual hooks via import paths — no separate packages required.
@@ -68,14 +68,14 @@ You only need **one install**. Pick individual hooks via import paths — no sep
 Your bundler includes only the hooks you import:
 
 \`\`\`tsx
-import { useDebounce } from "react-hook-hub/use-debounce";
-import { useToggle } from "react-hook-hub/use-toggle";
+import { useDebounce } from "react-hook-toolbox/use-debounce";
+import { useToggle } from "react-hook-toolbox/use-toggle";
 \`\`\`
 
 ### Import from the main entry
 
 \`\`\`tsx
-import { useDebounce, useToggle } from "react-hook-hub";
+import { useDebounce, useToggle } from "react-hook-toolbox";
 \`\`\`
 
 ## Available hooks
