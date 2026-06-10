@@ -1,12 +1,47 @@
 {
   "name": "react-hook-hub",
   "version": "1.0.0",
-  "description": "A collection of useful React custom hooks — install all or pick individual hooks via subpath imports",
+  "description": "A collection of useful React custom hooks — install once, import only the hooks you need via subpaths",
   "license": "MIT",
   "type": "module",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsup"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "custom-hooks",
+    "react-hooks",
+    "hook-hub",
+    "toolbox",
+    "debounce",
+    "localStorage",
+    "media-query"
+  ],
+  "author": "Hiren Gohel",
+  "homepage": "https://github.com/hgohel1994/react-hooks-toolbox#readme",
+  "bugs": {
+    "url": "https://github.com/hgohel1994/react-hooks-toolbox/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hgohel1994/react-hooks-toolbox.git"
+  },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "exports": {
     ".": {
       "import": {
@@ -228,40 +263,5 @@
         "default": "./dist/use-window-size.cjs"
       }
     }
-  },
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "sideEffects": false,
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "build": "tsup",
-    "clean": "rm -rf dist"
-  },
-  "peerDependencies": {
-    "react": ">=18"
-  },
-  "keywords": [
-    "react",
-    "hooks",
-    "custom-hooks",
-    "react-hooks",
-    "hook-hub",
-    "toolbox",
-    "debounce",
-    "localStorage",
-    "media-query"
-  ],
-  "author": "Hiren Gohel",
-  "homepage": "https://github.com/hgohel1994/react-hooks-toolbox#readme",
-  "bugs": {
-    "url": "https://github.com/hgohel1994/react-hooks-toolbox/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hgohel1994/react-hooks-toolbox.git"
   }
 }

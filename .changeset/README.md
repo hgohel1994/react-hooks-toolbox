@@ -2,7 +2,7 @@
 
 This repo publishes a **single npm package**: `react-hook-hub`.
 
-Individual hooks are available via subpath imports (e.g. `react-hook-hub/use-debounce`), not as separate npm packages.
+Individual hooks are imported via subpaths (e.g. `react-hook-hub/use-debounce`), not separate npm packages.
 
 ## Adding a changeset
 

@@ -47,7 +47,6 @@ Publish failed.
 
 If you see "You do not have permission to publish react-hook-hub":
   That name may already be taken on npm by another user.
-  Pick a different package name in packages/react-hook-hub/package.json.
 
 Other fixes:
   • 2FA: npm run publish:all -- --otp=YOUR_6_DIGIT_CODE
